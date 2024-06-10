@@ -1,0 +1,21 @@
+<body>
+     <app-header></app-header>
+    <main class="container mt-4">
+        <h2>Gestion des Dossiers du Personnel</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/search-employees" method="get" class="form-inline mb-3">
+                    <input type="text" class="form-control mr-2" id="search" name="search" placeholder="Rechercher un employé">
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                </form>
+                <ul class="list-group">
+                    <li class="list-group-item">Nom1 - Poste1 <a routerLink="/profil" class="btn btn-link">Voir</a> <a href="/employee/edit/1" class="btn btn-link">Modifier</a> <a href="/employee/delete/1" class="btn btn-link">Supprimer</a></li>
+                    <li class="list-group-item">Nom2 - Poste2 <a href="/employee/view/2" class="btn btn-link">Voir</a> <a href="/employee/edit/2" class="btn btn-link">Modifier</a> <a href="/employee/delete/2" class="btn btn-link">Supprimer</a></li>
+                    <!-- Ajouter d'autres employés ici -->
+                </ul>
+                <a href="/employee/add" class="btn btn-success mt-3">Ajouter un nouvel employé</a>
+            </div>
+        </div>
+    </main>
+     <app-footer></app-footer>
+</body>
